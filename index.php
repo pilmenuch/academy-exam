@@ -6,7 +6,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST')
   file_put_contents($file, date('Y-m-d H:i:s') . " Received message: " . $message . "\n", FILE_APPEND);
 }
 else
-{
+	{
 ?>
 <!doctype html>
 <html lang="en">
@@ -23,7 +23,7 @@ else
 </head>
 <body>
     <section class="congratulations">
-        <h1><font color=red>Congratulations <br><font color=black>From it-academy!!!</font></h1>
+        <h1><font color=red>Congratulations <br><font color=white>From it-academy!!!</font></h1>
         <p>Your    AWS Elastic Beanstalk  <em>PHP</em> application is now running on your own dedicated environment in the AWS&nbsp;Cloud</p>
         <p>You are running PHP version <?= phpversion() ?></p>
     </section>
